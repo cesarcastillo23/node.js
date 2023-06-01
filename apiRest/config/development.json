@@ -1,0 +1,10 @@
+{
+  "nombre":"Api Rest Express - Usuarios y curso",
+  "configDB":{
+      "HOST":"mongodb+srv://cesarcastillob23:castle235@cluster0.3fpdhgu.mongodb.net/demo"
+  },
+  "configToken":{
+    "SEED":"secret",
+    "expiration":"24h"
+  }
+}
