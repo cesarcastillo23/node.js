@@ -1,7 +1,10 @@
 const mongoose =require('mongoose')
-
+const MONGODB_URI=require('../mongodbPrueba/config')
 // CREAR CONEXION CON LA BASE DE DATOS 
-mongoose.connect('mongodb+srv://cesarcastillob23:castle235@cluster0.3fpdhgu.mongodb.net/prueba')
+mongoose.connect(MONGODB_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
   .then(()=> console.log('Conectado a mongoDB...'))
   .catch(err=>console.log('No se logro establecer la conexion',err))
 
@@ -171,4 +174,4 @@ async function actualizarCuros(id){
     console.log(result);
 
   }
-  eliminarCurso('647145605aedf2925e2a4524')
+  
